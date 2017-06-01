@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zy4-j1-3QN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leader Board-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Water_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leaderboardpageee" translatesAutoresizingMaskIntoConstraints="NO" id="kQc-kD-yRf">
+                                <rect key="frame" x="0.0" y="96" width="375" height="518"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="leaderboardlabel" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-Bd-YzN">
+                                <rect key="frame" x="76" y="45" width="223" height="27"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cGV-Bd-YzN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="25" id="TKn-F5-uDh"/>
+                            <constraint firstItem="cGV-Bd-YzN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="WcU-L1-2qz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Leader Board" image="first" selectedImage="leaderboard" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762.39999999999998" y="-396.25187406296857"/>
+        </scene>
+        <!--Your Usage-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Water_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterbucketimage" translatesAutoresizingMaskIntoConstraints="NO" id="zty-PB-Cwg">
+                                <rect key="frame" x="109" y="102" width="266" height="367"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amount" translatesAutoresizingMaskIntoConstraints="NO" id="rGj-os-QU6">
+                                <rect key="frame" x="102.5" y="489" width="170" height="27"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="your usage" translatesAutoresizingMaskIntoConstraints="NO" id="yqx-7H-bwB">
+                                <rect key="frame" x="0.0" y="45" width="375" height="47"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqt-GO-1yJ">
+                                <rect key="frame" x="241" y="549" width="88" height="40"/>
+                                <state key="normal" image="weekB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pii-QZ-NLK">
+                                <rect key="frame" x="46" y="549" width="88" height="40"/>
+                                <state key="normal" image="dayB"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pii-QZ-NLK" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="30" id="48g-eq-5O6"/>
+                            <constraint firstItem="yqx-7H-bwB" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="5uM-Aj-Gel"/>
+                            <constraint firstItem="xqt-GO-1yJ" firstAttribute="top" secondItem="rGj-os-QU6" secondAttribute="bottom" constant="33" id="5ur-1i-saf"/>
+                            <constraint firstAttribute="trailing" secondItem="zty-PB-Cwg" secondAttribute="trailing" id="J6e-Ma-OnT"/>
+                            <constraint firstItem="rGj-os-QU6" firstAttribute="top" secondItem="zty-PB-Cwg" secondAttribute="bottom" constant="20" id="KaO-03-NqB"/>
+                            <constraint firstItem="rGj-os-QU6" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="MDg-Qk-wi5"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="xqt-GO-1yJ" secondAttribute="bottom" constant="29" id="QqT-Hw-B4o"/>
+                            <constraint firstItem="zty-PB-Cwg" firstAttribute="top" secondItem="yqx-7H-bwB" secondAttribute="bottom" constant="10" id="VMw-9K-yM1"/>
+                            <constraint firstItem="yqx-7H-bwB" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="25" id="eCU-IT-3Lg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xqt-GO-1yJ" secondAttribute="trailing" constant="30" id="ja8-7u-ksg"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Pii-QZ-NLK" secondAttribute="bottom" constant="29" id="nTV-or-8O3"/>
+                            <constraint firstItem="Pii-QZ-NLK" firstAttribute="top" secondItem="rGj-os-QU6" secondAttribute="bottom" constant="33" id="xMP-Wf-XeD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Your Usage" image="second" selectedImage="water" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Tips-->
+        <scene sceneID="9Vm-sZ-6E2">
+            <objects>
+                <viewController id="5bW-Te-86D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5rk-M8-Mve"/>
+                        <viewControllerLayoutGuide type="bottom" id="aNT-zy-Cq2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nlb-wt-7qk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tips-2" translatesAutoresizingMaskIntoConstraints="NO" id="xyF-RQ-srT">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tips" selectedImage="info" id="tIC-FU-tff"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esg-nq-ERA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="1034.9325337331336"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HID-eI-y31">
+            <objects>
+                <viewController id="Zy4-j1-3QN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="duy-CQ-tq7"/>
+                        <viewControllerLayoutGuide type="bottom" id="0X0-mk-Olw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tea-kp-LMA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-ow-Fcm">
+                                <rect key="frame" x="44" y="272" width="286" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="waterloginnn" translatesAutoresizingMaskIntoConstraints="NO" id="eES-Hc-2gC">
+                                        <rect key="frame" x="-5" y="-121" width="295" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3n-dR-MnE">
+                                        <rect key="frame" x="26" y="71" width="234" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HcO-bC-6ad">
+                                        <rect key="frame" x="26" y="114" width="234" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="waterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Hei-9Y-hUQ">
+                                <rect key="frame" x="58" y="74" width="259" height="38"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG4-q2-WVk">
+                                <rect key="frame" x="145" y="439" width="86" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="login"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="YXK-qT-Zp7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00H-Ie-741" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863.20000000000005" y="-14.842578710644679"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="5bW-Te-86D" kind="relationship" relationship="viewControllers" id="XA6-dz-gih"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="amount" width="170" height="27"/>
+        <image name="dayB" width="88" height="40"/>
+        <image name="first" width="30" height="30"/>
+        <image name="info" width="22" height="36"/>
+        <image name="leaderboard" width="33" height="35"/>
+        <image name="leaderboardlabel" width="223" height="27"/>
+        <image name="leaderboardpageee" width="375" height="667"/>
+        <image name="login" width="86" height="41"/>
+        <image name="second" width="30" height="30"/>
+        <image name="tips-2" width="375" height="667"/>
+        <image name="water" width="26" height="38"/>
+        <image name="waterLogo" width="259" height="38"/>
+        <image name="waterbucketimage" width="266" height="367"/>
+        <image name="waterloginnn" width="295" height="406"/>
+        <image name="weekB" width="88" height="40"/>
+        <image name="your usage" width="375" height="47"/>
+    </resources>
+</document>
